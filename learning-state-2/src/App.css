@@ -1,0 +1,13 @@
+
+button{
+    padding: 0.5rem 2rem;
+    background-color: rgb(57, 205, 205);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}

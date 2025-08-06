@@ -1,0 +1,33 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(205, 206, 207);
+  color: rgb(18, 22, 15);
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh;
+}
+button{
+  padding:0.5rem 1rem;
+  background-color: rgb(164, 105, 220);
+  margin: 4.5rem 2rem;
+  border: none;
+  border-radius: 0.2rem;
+}
+.box{
+background-color: aliceblue;
+padding: 5rem;
+color: rgb(120, 154, 19);
+}
+
+
+.box p{
+  text-align: center;
+  font-size: 2rem;
+}
