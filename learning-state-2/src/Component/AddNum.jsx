@@ -20,7 +20,7 @@ const [result,setResult]=useState();
           value={num1} 
           onChange={(event)=>setNum1(parseInt(event.target.value)||0)} />
 
-          <button onClick={add}>click</button>
+          <button onClick={add}>Add</button>
 
            <h3>Result : {result}</h3>
 

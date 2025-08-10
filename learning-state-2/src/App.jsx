@@ -10,6 +10,9 @@ function App() {
 return(
   <div>
    <AddNum/>
+   <CheckEvenOdd/>
+   <Faq/>
+   <Tabs/>
   </div>
 )
 

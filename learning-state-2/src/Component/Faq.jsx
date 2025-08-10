@@ -6,7 +6,8 @@ function Faq() {
   return (
     <div>
         <div>
-            <p>Quetions</p> <button onClick={()=>setFaq(!faq)}>+</button>
+            <p>Quetions</p> 
+            <button onClick={()=>setFaq(!faq)}>+</button>
         </div>
 
         <div>

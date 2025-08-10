@@ -17,8 +17,8 @@ const checkNum=()=>{
         <input 
         type="number" 
         value={num}
-        onChange={(event)=>setNum (parseInt(event.target.value)||0)} />
-        <button onClick={checkNum}> click</button>
+        onChange={(event)=>setNum (parseInt(event.target.value))} />
+        <button onClick={checkNum}>Check</button>
     </>
   )
 }
