@@ -22,18 +22,20 @@ function Todos(){
     return (
         <div>     
             {todos.map(todo=>{
-            return <Card todoTittle={todo.todo} userId={todo.userId} />
+            return <Card key={todo.id} todoTittle={todo.todo} todoId={todo.id} userId={todo.userId} />
         }) }
         </div>
  
     );
 }
 
-function Card(todoTittle,userId){
+function Card({todoTittle,userId,todoId}){
     return(
       <div>
+        <h3>{todoId}</h3>
         <h1>{todoTittle}</h1>
         <p>{userId}</p>
+       
       </div>
     );
 }
