@@ -9,10 +9,16 @@ const counterSlice=createSlice({
         },
         decrement:(state,action)=>{
             return state-1;
+        },
+        reset:()=>{
+            return 0;
+        },
+        increaseByVal:(state,action)=>{
+            return state+action.payload;
         }
 
     }
 });
 export const counterReducer=counterSlice.reducer;
 
-export const {increment,decrement}=counterSlice.actions;
+export const {increment,decrement,reset,increaseByVal}=counterSlice.actions;

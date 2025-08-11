@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import { useDispatch, useSelector } from 'react-redux'
-import { increment,decrement } from './slices/counterSlice';
+import { increment,decrement, reset, increaseByVal } from './slices/counterSlice';
 
 function App() {
 
@@ -28,13 +28,22 @@ function Component2(){
   const dispatch=useDispatch();
 
   return(
-    <>
+    <div className='flex gap-2'>
     <button onClick={()=>
+      dispatch(increment())
+    }  className='border-2 p-3 bg-blue-300 rounded-xl w-fit self-center'>+</button>
+     <button onClick={()=>
       dispatch(decrement())
-    }  className='border-2 p-3 bg-blue-300 rounded-xl w-fit self-center'>Click</button>
+    }  className='border-2 p-3 bg-blue-300 rounded-xl w-fit self-center'>-</button>
+     <button onClick={()=>
+      dispatch(reset())
+    }  className='border-2 p-3 bg-blue-300 rounded-xl w-fit self-center'>Reset</button>
+     <button onClick={()=>
+      dispatch(increaseByVal(5))
+    }  className='border-2 p-3 bg-blue-300 rounded-xl w-fit self-center'>increaseByVal</button>
 
   
-    </>
+    </div>
   )
 }
 function Component3(){
